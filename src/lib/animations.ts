@@ -18,7 +18,8 @@ export const initScrollAnimations = () => {
         // Add a slight delay between animations for a staggered effect
         const delay = parseFloat(entry.target.getAttribute('data-delay') || '0');
         if (delay > 0) {
-          entry.target.style.transitionDelay = `${delay}s`;
+          // Cast to HTMLElement to fix the type error
+          (entry.target as HTMLElement).style.transitionDelay = `${delay}s`;
         }
       }
     });
@@ -91,7 +92,7 @@ export const addClassWithDelay = (
 export const createParallaxEffect = (
   element: HTMLElement,
   speed: number = 0.5
-): void => {
+): () => void => {  // Change return type to match the actual return
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const offset = scrollPosition * speed;
@@ -149,7 +150,7 @@ export const animateStaggeredItems = (
 export const applyTiltEffect = (
   element: HTMLElement,
   maxTilt: number = 10
-): () => void => {
+): () => void => {  // Explicitly declare return type as function
   const handleMouseMove = (e: MouseEvent) => {
     const rect = element.getBoundingClientRect();
     const x = e.clientX - rect.left;
