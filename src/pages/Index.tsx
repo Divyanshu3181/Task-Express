@@ -11,13 +11,26 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import StructuredData from "@/components/StructuredData";
-import { initScrollAnimations } from "@/lib/animations";
+import { initScrollAnimations, animateStaggeredItems } from "@/lib/animations";
 
 const Index = () => {
-  // Implement scroll animation observer
+  // Implement scroll animation observer and initialize theme
   useEffect(() => {
     // Initialize scroll animations
     const cleanup = initScrollAnimations();
+    
+    // Initialize staggered animations
+    animateStaggeredItems('.stagger-container', '.stagger-item', 150);
+    
+    // Check for theme preference in local storage or system
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
     
     // Set meta tags for SEO
     const metaTags = [
@@ -53,7 +66,7 @@ const Index = () => {
   }, []);
   
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden bg-background text-foreground transition-colors duration-300">
       <StructuredData />
       <Navbar />
       
