@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -22,11 +21,11 @@ const Index = () => {
     // Initialize staggered animations
     animateStaggeredItems('.stagger-container', '.stagger-item', 150);
     
-    // Check for theme preference in local storage or system
+    // Check for theme preference in local storage
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    // Apply theme - default to light mode if no preference is set
+    if (savedTheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
