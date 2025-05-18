@@ -8,13 +8,20 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-brand-blue to-brand-orange rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">TX</span>
+              <div >
               </div>
               <span className="ml-2 text-xl font-poppins font-bold">
-                <span className="text-brand-blue">Task</span>
+                <a href="#" className="flex items-center space-x-2">
+                  <img 
+                    src="/Logo.jpeg" 
+                    alt="TaskExpress Logo" 
+                    className="w-10 h-10 rounded-lg object-cover"
+                  />
+                          <span className="text-brand-blue">Task</span>
                 <span className="text-brand-orange">Express</span>
+                 </a>
               </span>
+             
             </div>
             
             <p className="text-gray-400 mb-6">
@@ -58,7 +65,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Popular Cities</h3>
+            <h3 className="text-lg font-semibold mb-4">Upcoming Cities</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Delhi NCR</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mumbai</a></li>

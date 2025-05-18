@@ -8,7 +8,7 @@ const DownloadSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Download Task Express App</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Download Task Express App (Coming Soon) </h2>
             <p className="text-xl mb-6 text-blue-100">
               Get instant access to 69+ services with verified professionals across 50+ Indian cities
             </p>
@@ -64,13 +64,13 @@ const DownloadSection: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.523 9.794c-.154-.307-.394-.604-.703-.803l-3.571-2.315c-.456-.297-1.102-.047-1.102.498v4.518c0 .545.646.795 1.102.498l3.571-2.312c.308-.2.549-.496.703-.804.404-.803.404-1.687 0-2.491zm-5.9 5.97c-.19.087-.399.131-.623.131-.263 0-.528-.06-.768-.182l-3.732-1.926c-.531-.275-.856-.82-.856-1.426v-3.931c0-.606.325-1.151.856-1.426l3.732-1.926c.481-.245 1.063-.213 1.516.085.179.116.33.268.444.433.114.165.2.356.242.568.071.313.024.645-.116.952-.14.308-.366.555-.648.719l-2.639 1.503c-.309.176-.309.615 0 .791l2.639 1.503c.519.294.826.88.762 1.487-.064.605-.489 1.108-1.095 1.299-.089.026-.179.049-.27.069-.133.026-.267.039-.399.039-.084 0-.168-.005-.251-.016-.1-.007-.173-.03-.249-.048l-5.51 5.528v-3.75l2.081-2.086c.395-.394.395-1.033 0-1.427-.395-.394-1.034-.394-1.428 0l-.653.654v-1.549l.624-.625c.395-.394.395-1.034 0-1.428-.395-.394-1.034-.394-1.428 0l-5.075 5.091c-.394.394-.394 1.034 0 1.428l11.947 11.979c.394.394 1.034.394 1.428 0l11.946-11.979c.394-.394.394-1.034 0-1.428l-3.843-3.853z" />
                 </svg>
-                Play Store
+                Play Store (Coming Soon)
               </Button>
               <Button 
                 variant="outline" 
                 className="border-white text-brand-blue hover:bg-white/10 hover:text-white font-semibold rounded-full px-8 py-6 text-lg"
               >
-                Scan QR Code
+                Scan QR Code (Coming Soon)
               </Button>
             </div>
           </div>

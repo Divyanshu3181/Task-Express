@@ -13,33 +13,31 @@ const HowItWorksSection: React.FC = () => {
             Connect with skilled professionals in just a few simple steps
           </p>
         </div>
-        
-        <div className="flex flex-col lg:flex-row gap-20">
-          <div className="lg:w-1/2">
-            <div className="relative">
-              <div className="w-80 h-80 bg-brand-blue/5 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
-              <div className="relative z-10 bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1603539947369-89e5e3a0af45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                  alt="Task Express mobile app showcasing service booking process" 
-                  className="w-full h-auto"
+
+        <div className="flex flex-col  lg:flex-row gap-20">
+          <div className="lg:w-1/2 flex justify-center">
+            <div className="relative px-10 py-5"> 
+              <div className="relative z-10 rounded-xl shadow-xl overflow-hidden border border-gray-100">
+                <img
+                  src="appview.jpeg"
+                  alt="Task Express mobile app showcasing service booking process"
+                  className="h-[80vh] w-[50vh] rounded-xl mx-auto"
                 />
               </div>
-              <div className="absolute top-5 -left-5 bg-white p-4 rounded-lg shadow-lg animate-float">
+              <div className="absolute top-5 -left-5 bg-white p-4 rounded-lg shadow-lg animate-float z-20">
                 <p className="font-semibold text-brand-blue text-center">4.8</p>
                 <p className="text-xs text-gray-500">App Rating</p>
               </div>
-              <div className="absolute bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg animate-float" style={{ animationDelay: '1.2s' }}>
+              <div className="absolute bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg animate-float z-20" style={{ animationDelay: '1.2s' }}> 
                 <p className="font-semibold text-brand-orange text-center">30s</p>
-                <p className="text-xs text-gray-500">Fast Booking</p>
+                <p className="text-xs text-gray-500">App Rating</p>
               </div>
             </div>
           </div>
-          
           <div className="lg:w-1/2">
             <div className="mb-12">
               <h3 className="text-2xl font-semibold mb-6 text-gray-800">Simple 4-Step Process</h3>
-              
+
               <div className="space-y-8">
                 <div className="flex gap-6 items-start animate-on-scroll">
                   <div className="flex-shrink-0">
@@ -52,7 +50,7 @@ const HowItWorksSection: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-6 items-start animate-on-scroll" style={{ transitionDelay: '0.2s' }}>
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold text-lg">2</div>
@@ -64,7 +62,7 @@ const HowItWorksSection: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-6 items-start animate-on-scroll" style={{ transitionDelay: '0.4s' }}>
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold text-lg">3</div>
@@ -76,7 +74,7 @@ const HowItWorksSection: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-6 items-start animate-on-scroll" style={{ transitionDelay: '0.6s' }}>
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold text-lg">4</div>
@@ -90,7 +88,7 @@ const HowItWorksSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-lg p-6 border border-gray-100 shadow-sm animate-on-scroll" style={{ transitionDelay: '0.8s' }}>
               <div className="flex flex-col sm:flex-row gap-6 items-center">
                 <div className="sm:w-1/2">
@@ -98,10 +96,10 @@ const HowItWorksSection: React.FC = () => {
                   <p className="text-gray-600 mb-4">
                     Get unlimited access to all services with zero convenience fees for 3 months at just ₹99!
                   </p>
-                  <Button 
+                  <Button
                     className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium rounded-full px-6"
                   >
-                    Subscribe Now
+                    Subscribe Now (Coming Soon)
                   </Button>
                 </div>
                 <div className="sm:w-1/2 text-center">

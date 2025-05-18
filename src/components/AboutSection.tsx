@@ -100,23 +100,25 @@ const AboutSection: React.FC = () => {
               <div className="absolute -top-8 -left-8 w-64 h-64 bg-brand-blue/5 rounded-full"></div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-brand-orange/5 rounded-full"></div>
               
-              <div className="relative z-10">
-                <img 
-                  src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                  alt="Worker using Task Express app" 
-                  className="rounded-lg shadow-xl w-full"
-                />
-              </div>
-              
-              <div className="absolute bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg animate-float">
-                <p className="font-semibold text-brand-blue">5,000+</p>
-                <p className="text-sm text-gray-600">Verified Professionals</p>
-              </div>
-              
-              <div className="absolute top-6 -left-6 bg-white p-4 rounded-lg shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-                <p className="font-semibold text-brand-orange">50+</p>
-                <p className="text-sm text-gray-600">Cities Covered</p>
-              </div>
+             <div className="relative px-8 py-8"> {/* Added padding container for floating elements */}
+  <div className="relative z-10">
+    <img 
+      src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+      alt="Worker using Task Express app" 
+      className="rounded-lg shadow-xl w-full"
+    />
+  </div>
+  
+  <div className="absolute bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg animate-float z-20"> {/* Added z-20 */}
+    <p className="font-semibold text-brand-blue">5,000+</p>
+    <p className="text-sm text-gray-600">Verified Professionals</p>
+  </div>
+  
+  <div className="absolute top-6 -left-6 bg-white p-4 rounded-lg shadow-lg animate-float z-20" style={{ animationDelay: '1s' }}> {/* Added z-20 */}
+    <p className="font-semibold text-brand-orange">50+</p>
+    <p className="text-sm text-gray-600">Cities will Cover</p>
+  </div>
+</div>
             </div>
           </div>
         </div>

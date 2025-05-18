@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
             </div>
             
             <div ref={statsRef} className="flex flex-wrap gap-6 text-center">
-              <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              {/* <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
                 <p className="stat-value text-3xl font-bold text-brand-blue dark:text-blue-400" data-value="30" data-suffix="s">0s</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Instant Connection</p>
               </div>
@@ -105,7 +105,7 @@ const HeroSection: React.FC = () => {
               <div className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
                 <p className="stat-value text-3xl font-bold text-brand-blue dark:text-blue-400" data-value="50" data-suffix="+">0+</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Indian Cities</p>
-              </div>
+              </div> */}
               <div className="animate-slide-up" style={{ animationDelay: '0.8s' }}>
                 <p className="stat-value text-3xl font-bold text-brand-orange" data-value="99" data-prefix="₹">₹0</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">3 Month Subscription</p>
