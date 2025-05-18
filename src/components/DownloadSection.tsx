@@ -68,7 +68,7 @@ const DownloadSection: React.FC = () => {
               </Button>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10 hover:text-white font-semibold rounded-full px-8 py-6 text-lg"
+                className="border-white text-brand-blue hover:bg-white/10 hover:text-white font-semibold rounded-full px-8 py-6 text-lg"
               >
                 Scan QR Code
               </Button>

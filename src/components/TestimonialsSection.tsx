@@ -188,7 +188,7 @@ const TestimonialsSection: React.FC = () => {
               <Button 
                 className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium rounded-full px-8 py-6 text-lg animate-pulse-light"
               >
-                Download App Now
+                Coming Soon
               </Button>
             </div>
           </div>

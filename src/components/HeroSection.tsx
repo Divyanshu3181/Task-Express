@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
               <Button 
                 className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium rounded-full px-8 py-6 text-lg animate-pulse-light transform transition-transform hover:scale-105"
               >
-                Download App
+                Coming Soon
               </Button>
               <Button 
                 variant="outline" 

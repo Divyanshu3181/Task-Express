@@ -147,7 +147,7 @@ const ServicesSection: React.FC = () => {
                 variant="outline" 
                 className="w-full border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white"
               >
-                Book Now
+                Know More
               </Button>
             </div>
           ))}

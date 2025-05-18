@@ -9,18 +9,20 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm z-50 shadow-sm dark:shadow-gray-800/20">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <a href="#" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-brand-blue to-brand-orange rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">TX</span>
-            </div>
-            <span className="text-2xl font-poppins font-bold">
-              <span className="text-brand-blue dark:text-blue-400">Task</span>
-              <span className="text-brand-orange">Express</span>
-            </span>
-          </a>
-        </div>
+  <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="flex items-center">
+      <a href="#" className="flex items-center space-x-2">
+        <img 
+          src="/Logo.jpeg" 
+          alt="TaskExpress Logo" 
+          className="w-10 h-10 rounded-lg object-cover"
+        />
+        <span className="text-2xl font-poppins font-bold">
+          <span className="text-brand-blue dark:text-blue-400">Task</span>
+          <span className="text-brand-orange">Express</span>
+        </span>
+      </a>
+    </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -50,7 +52,7 @@ const Navbar: React.FC = () => {
             variant="default" 
             className="bg-brand-blue hover:bg-brand-dark text-white font-medium rounded-full px-5"
           >
-            Download App
+            Coming Soon
           </Button>
         </div>
 
@@ -117,7 +119,7 @@ const Navbar: React.FC = () => {
                 variant="default" 
                 className="bg-brand-blue hover:bg-brand-dark text-white font-medium rounded-full px-5 mt-2"
               >
-                Download App
+                Coming Soon
               </Button>
             </nav>
           </div>
